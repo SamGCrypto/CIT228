@@ -9,7 +9,7 @@ print(f"Favorite movies: {movList}")
 print(f"Combo List: {comList}")
 print(f"Last Food Item: {food[-1]}")
 print(f"2nd 4th and 6th number are: {numLuck[1]} {numLuck[3]}, {numLuck[5]}")
-print(f"All movies = ")
+print(f"All movies =  ")
 for x in movList:
     print(x)
 print(f"first food, first number and first movie = {food[0]}, {numLuck[0]}, {movList[0]}")
