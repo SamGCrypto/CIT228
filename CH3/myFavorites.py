@@ -1,0 +1,35 @@
+print("---------------Hands on 1---------------------------")
+food = ['lasgana','pizza','popcorn','chili','tacos','spaghetti']
+numLuck = ['13','68','12','25','15','18']
+movList =['The Hobbit','Saw','Nightmare on Elm Street']
+comList =['Lasgana','pizza','saw','The Hobbit','13','68']
+print(f"Favorite Foods: {food}")
+print(f"Lucky Number: {numLuck}")
+print(f"Favorite movies: {movList}")
+print(f"Combo List: {comList}")
+print(f"Last Food Item: {food[-1]}")
+print(f"2nd 4th and 6th number are: {numLuck[1]} {numLuck[3]}, {numLuck[5]}")
+print(f"All movies = ")
+for x in movList:
+    print(x)
+print(f"first food, first number and first movie = {food[0]}, {numLuck[0]}, {movList[0]}")
+print("----------HANDS ON 2---------------------")
+movList.append('The Crow')
+print(f"added movie:{movList}")
+numLuck.insert(3,'1094')
+print(f"Added number at sub 3{numLuck}")
+food.insert(5,"Popcorn Chicken")
+print(f"Added food at sub 5{food}")
+del food[6]
+print(f"Deleted food number 6 {food}")
+numLuck.pop(-1)
+print(f"deleted the last number {numLuck}")
+numLuck.pop(2)
+print(f"deleted number at sub two {numLuck}")
+print("----------------HANDS ON 3------------------")
+movList.sort()
+print(f"Sorted List:{movList}")
+food.sort()
+print(f"Sorted List{food}")
+print(f"Temp Sorted List{sorted(numLuck)}")
+print(f"Unsorted list{numLuck}")
