@@ -23,32 +23,23 @@ class User:
         self.loginAttempt=0
 
 class Admin(User):
-    def __init__(self, fname, lname, age,height,password,loginAttempt=0):
+    def __init__(self, fname, lname, age,height,password,privilegesList,loginAttempt=0):
         self.fname = fname
         self.lname = lname
         self.age = age
         self.height = height
         self.password = password
         self.loginAttempt = loginAttempt
-        self.privileges = []
+        self.privilegesList = privilegesList
 
 
     def list_privileges(self):
-        for u in self.privileges:
-            print(u)        
-
-    def privileges(self):
-        while True:
-            enterThing = str(input("Enter a privilege: "))
-            if enterThing == 'end':
-                break
-            else:
-                self.privileges.append(enterThing)
+            print(self.privilegesList)        
 
 
 
-new_admin = Admin('Michael','Kenton',25,"5'6", 'passw0rd')
 
-new_admin.privileges()
+
+new_admin = Admin('Michael','Kenton',25,"5'6", 'passw0rd','Can modify')
 
 new_admin.list_privileges()
