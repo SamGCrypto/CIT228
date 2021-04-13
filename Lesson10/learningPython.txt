@@ -1,0 +1,3 @@
+Python is good for classes
+Python is good for making methods
+Python is good for inheritances

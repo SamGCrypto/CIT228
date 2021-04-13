@@ -1,0 +1,10 @@
+{
+    "Try/Catch": "to throw an error message should an exception be found",
+    "bool": "a true or false variable",
+    "dictionary": "python data type that stores key values:value pairs",
+    "for": "used to create a counting loop",
+    "int": "variable that should only be a number",
+    "list": "a list of items that can change.",
+    "tuples": "a list of items that do not change.",
+    "while": "used to create a conditional loop"
+}
