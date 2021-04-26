@@ -30,8 +30,8 @@ rivers = {'Nile':['Egypt'],
 'Mississippi River':['America']}
 for key, value in rivers.items():
     if type(value)==list:
-        print(f"The{key.title()} river flows through: ")
+        print(f"The {key.title()} river flows through: ")
         for v in value:
             print("\t\t\t\t",v)
         else:
-            print(f"The {key.title} river flows through {value.title()}")
+            print(f"The {key.title()} river flows through {value}")
