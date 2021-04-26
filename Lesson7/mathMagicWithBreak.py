@@ -4,8 +4,8 @@ counter = 0
 incorrect =0
 numberCorrect =0
 while counter<10:
-    randNumber1 = random.randrange(1,1000)
-    randNumber2 = random.randrange(1,1000)
+    randNumber1 = random.randrange(1,10)
+    randNumber2 = random.randrange(1,10)
     randOption = random.randrange(1,2)
     
     if incorrect >5:

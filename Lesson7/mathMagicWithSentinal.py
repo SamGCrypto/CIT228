@@ -1,10 +1,10 @@
 import random
 incorrect =0
 numberCorrect =0
-continueTesting = 'yes'
-while continueTesting =='yes':
-    randNumber1 = random.randrange(1,1000)
-    randNumber2 = random.randrange(1,1000)
+continueTesting = 'y'
+while continueTesting =='y':
+    randNumber1 = random.randrange(1,10)
+    randNumber2 = random.randrange(1,104)
     randOption = random.randrange(1,2)
     if incorrect >4:
         print("Maybe you should go get a tutor.")
@@ -28,10 +28,10 @@ while continueTesting =='yes':
         else:
             print(f"Sorry, the correct answer is {correctAnswer}")
             incorrect+=1
-    print("Do you wish to continue?")
+    print("Do you wish to continue? [y/n]")
     continueTesting=input()
 
-if incorrect>5:
+if incorrect>4:
     print("Try again next time")
 else:
     print("You answered", numberCorrect, " Questions correctly!")

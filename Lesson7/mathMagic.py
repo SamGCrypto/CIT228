@@ -3,8 +3,8 @@ problems = int(input("How many math problems would you like to practice?"))
 counter = 0
 numberCorrect =0
 while counter<problems:
-    randNumber1 = random.randrange(1,1000)
-    randNumber2 = random.randrange(1,1000)
+    randNumber1 = random.randrange(1,10)
+    randNumber2 = random.randrange(1,10)
     randOption = random.randrange(0,1)
     if randOption ==0:
         correctAnswer = int(randNumber1+randNumber2)
@@ -25,7 +25,7 @@ while counter<problems:
             counter+=1
         else:
             print(f"Sorry, the correct answer is {correctAnswer}")
-            counter+=1
+            counter+=12
             
 
 print("You answered", numberCorrect, " Questions correctly!")
