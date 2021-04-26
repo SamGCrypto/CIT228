@@ -22,18 +22,22 @@ class User:
     def reset_login_attempts(self):
         self.loginAttempt=0
 
+class Admin(User):
+    def __init__(self, fname, lname, age, height, greeting,password):
+        super().__init__(fname, lname, age, height, greeting,password,loginAttempt = 0)
+        self.privileges =[]
 
-badTypist = User('Elle','McEl',13,"5'6",'Hello there','passw0rd')
-counter = 0
-attempt =10
+    def show_privileges(self):
+        print("\nPrivileges:")
+        for privileges in self.privileges:
+            print("- "+privileges)
 
-while counter<attempt:
-    print('ERROR WRONG PASSWORD')
-    badTypist.increment_login_attempts()
-    print(f'User has attempted to enter password {badTypist.loginAttempt}')
-    counter+=1
-    if counter>5:
-        badTypist.reset_login_attempts()
-        print(f"The admins have reset login attempts for {badTypist.fname} {badTypist.lname}")
-        print(badTypist.loginAttempt)
-        break
+test = Admin('Alan', 'Michl',10,120,"Hello I am the admin","password")
+test.describe_self()
+
+test.privileges = [
+    'can rest passwords',
+    'can moderate',
+    'can suspend accounts',
+]
+test.show_privileges()

@@ -1,13 +1,13 @@
 class Restaurant:
 
-    def __init__(self, cuisine_type, isOpen, name, numServed=0):
-        self.cuisine_type = cuisine_type
+    def __init__(self, cuisine, isOpen, name, numServed=0):
+        self.cuisine = cuisine
         self.isOpen = isOpen
         self.name = name
         self.numServed = numServed
 
     def describe_restaurant(self):
-        print(f"the restaurant {self.name} serves {self.cuisine_type}")
+        print(f"the restaurant {self.name} serves {self.cuisine}")
 
     def open_restaurant(self):
         print(f"The restaurant {self.name} is {self.isOpen}")
@@ -18,9 +18,12 @@ class Restaurant:
     def number_served_updated(self, numServed):
         self.numServed += numServed
         
-    def set_number_served(self, served):
+    def number_served_default(self, served):
         self.numServed = int(served)
 
+
+
+        
 
 
 my_new_res1 = Restaurant('Asian','Open','Thai Kitchen',40)
@@ -43,8 +46,6 @@ my_new_res3.open_restaurant()
 
 
 
-my_new_res3.number_served()
-my_new_res3.set_number_served(100)
 my_new_res3.number_served()
 my_new_res3.number_served_updated(31)
 my_new_res3.number_served() 

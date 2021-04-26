@@ -1,13 +1,13 @@
 class Restaurant:
 
-    def __init__(self, cuisine, isOpen, name):
-        self.cuisine = cuisine
+    def __init__(self, cuisine_type, isOpen, name, numServed=0):
+        self.cuisine_type = cuisine_type
         self.isOpen = isOpen
         self.name = name
-        self.numServed =0
+        self.numServed = numServed
 
     def describe_restaurant(self):
-        print(f"the restaurant {self.name} serves {self.cuisine}")
+        print(f"the restaurant {self.name} serves {self.cuisine_type}")
 
     def open_restaurant(self):
         print(f"The restaurant {self.name} is {self.isOpen}")
@@ -17,7 +17,9 @@ class Restaurant:
 
     def number_served_updated(self, numServed):
         self.numServed += numServed
-
+        
+    def set_number_served(self, served):
+        self.numServed = int(served)
 
 class IceCreamStand(Restaurant):
     def __init__(self, isOpen, name):
